@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/titleRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="6"
+                    android:gravity="center"
+                    android:text="@string/demographic_indicators"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" >
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/colNamesRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/yearTextView"
+                    android:text="@string/year"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/urbanPopTextView"
+                    android:text="@string/urbanPopulation"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ruralPopTextView"
+                    android:text="@string/ruralPopulation"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/totalPopTextView"
+                    android:text="@string/total"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </TableRow>
+
+        </TableLayout>
+        
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:id="@+id/getYearsTextView"
+            android:layout_below="@id/tableLayout1"
+            android:text="@string/getYears"
+            android:layout_marginHorizontal="2.5dp" 
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="80dp"
+            android:id="@+id/getMaxChangeYearTextView"
+            android:layout_below="@id/tableLayout1"
+            android:layout_toRightOf="@id/getYearsTextView"
+            android:text="@string/getMaxChangeYear"
+            android:layout_marginHorizontal="2.5dp" 
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/getYearsButton"
+            android:layout_below="@id/getYearsTextView"
+            android:layout_marginHorizontal="2.5dp" 
+            android:text="@string/search"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/getMaxChangeYearButton"
+            android:layout_below="@id/getMaxChangeYearTextView"
+            android:layout_toRightOf="@id/getYearsButton"
+            android:layout_marginHorizontal="2.5dp" 
+            android:text="@string/search"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goBackButton1"
+            android:layout_below="@id/getMaxChangeYearButton"
+            android:layout_marginHorizontal="2.5dp" 
+            android:text="@string/goBack"/>
+
+    </RelativeLayout>
+</ScrollView>

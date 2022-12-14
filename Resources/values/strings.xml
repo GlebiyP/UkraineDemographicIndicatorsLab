@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UkraineDemographicIndicatorsLab</string>
+    <string name="action_settings">Settings</string>
+    <string name="demographic_indicators">Демографічні показники України</string>
+    <string name="year">Рік</string>
+    <string name="urbanPopulation">Міське населення</string>
+    <string name="ruralPopulation">Сільське населення</string>
+    <string name="total">Усього</string>
+    <string name="getYears">Знайти роки, де зміна популяції від попереднього року не перевищувала x%</string>
+    <string name="getMaxChangeYear">Знайти рік, у який кількість населення змінилася найбільще</string>
+    <string name="search">Пошук</string>
+    <string name="db">База даних</string>
+    <string name="contacts">Контакти</string>
+    <string name="geoServices">Геосервіси</string>
+    <string name="aboutAuthor">Про автора</string>
+    <string name="goBack">Назад</string>
+    <string name="authorInfo">Виконав студент групи ТТП-41 Петрук Гліб</string>
+</resources>

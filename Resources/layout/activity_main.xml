@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dbButton"
+            android:text="@string/db"
+            android:layout_marginHorizontal="2.5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contactsButton"
+            android:layout_below="@id/dbButton" 
+            android:text="@string/contacts"
+            android:layout_marginHorizontal="2.5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/geoServicesButton"
+            android:layout_below="@id/contactsButton"
+            android:text="@string/geoServices"
+            android:layout_marginHorizontal="2.5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutAuthorButton"
+            android:layout_below="@id/geoServicesButton"
+            android:text="@string/aboutAuthor"
+            android:layout_marginHorizontal="2.5dp"/>
+
+    </RelativeLayout>
+</ScrollView>
